@@ -41,7 +41,7 @@ def play(board)
   end
 end
 
-<<<<<<< HEAD
+
 def play(board)
   until over?(board)
     turn(board)
@@ -55,8 +55,7 @@ else draw?(board)
 end
 end
 
-=======
->>>>>>> 09fb86d0b2294c4a2955fd25684444e3bc8aaf5b
+
 def turn_count(board)
 counter = 0
   board.each do |board_number|
@@ -117,17 +116,17 @@ end
 
 
 def draw?(board)
-<<<<<<< HEAD
+
    if !full?(board) && !won?(board)
      return false
    elsif !won?(board) && full?(board)
        return true
-=======
+
    if !won?(board) && full?(board)
      return true
    elsif !won?(board) && !full?(board)
      return false
->>>>>>> 09fb86d0b2294c4a2955fd25684444e3bc8aaf5b
+
    else won?(board)
      return false
    end
